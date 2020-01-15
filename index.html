@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>React Hello World</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1" />
+  <title>Sally's Resume in React</title>
 </head>
 <body>
-    <div id="application-root"></div>
-
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+  <div id="sally-resume"></div>
+  <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js">
   </script>
   <script
     src="https://unpkg.com/react@16/umd/react.development.js">
@@ -15,28 +17,60 @@
   <script
     src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
   </script>
-
   <script type="text/babel">
-    function App(props) {
-      console.log(props)
+    function App() {
       return (
         <header>
-          {props.children}
+          <main style={{fontFamily: "sans-serif"}}>
+            <section>
+              <h1>Sally S Sally's! Resume! In React!!</h1>
+            </section>
+            <section>
+              <address id='address' style={{fontStyle: "normal"}}>
+                Name: Sally S Sally<br></br>
+                Email: <a href="mailto:sally@sallyco.com">Contact me</a><br></br>
+                Box 564, Disneyland<br></br>
+                USA<br></br>
+                555-555-5555<br></br>
+              </address><br></br>
+              <img 
+                style={{borderStyle: "solid", borderWidth: "1px", borderRadius: "3px"}}
+                src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Sally">
+              </img>
+            </section>
+            <section>
+              <h2>Employment History</h2>
+              <h3>Company 1</h3>
+              <div className="jd">
+                Founder <i>(June 2017 to Present)</i><br></br><br></br>
+                Lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum. 
+                Lorum ipsum lorum ipsum lorum ipsum lorum ipsum. Lorum ipsum lorum ipsum lorum ipsum. 
+                Lorum ipsum lorum ipsum lorum ipsum.
+              </div>
+              <h3>Company 2</h3>
+              <div className="jd">
+                Founder <i>(June 2015 to June 2017)</i><br></br><br></br>
+                Lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum. 
+                Lorum ipsum lorum ipsum lorum ipsum lorum ipsum. Lorum ipsum lorum ipsum lorum ipsum. 
+                Lorum ipsum lorum ipsum lorum ipsum.
+              </div>
+            </section>
+            <section>
+              <h2>Education</h2>
+              <h3>Springfield University</h3>
+              <div className="schooling">
+                Nuclear Physics BS <i>(1993)</i><br></br><br></br>
+              </div>
+            </section>
+          </main>
         </header>
       );
     }
 
     ReactDOM.render(
-      <App className='my-class'>
-        <div>
-          <h1>Current Page Title!<br></br>
-            <span>Hola!
-            </span>
-          </h1>
-        </div>
-      </App>,
-      document.querySelector('#application-root')
+      <App />,
+      document.querySelector('#sally-resume')
     );
   </script>
-  </body>
+</body>
 </html>
