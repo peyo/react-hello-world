@@ -21,46 +21,55 @@
     function App() {
       return (
         <header>
-          <main style={{fontFamily: "sans-serif"}}>
-            <section>
+          <main style={{fontFamily: "sans-serif", display: "flex", }}>
+            <section style={{flex: "1"}}>
               <h1>Sally S Sally's! Resume! In React!!</h1>
             </section>
-            <section>
-              <address id='address' style={{fontStyle: "normal"}}>
-                Name: Sally S Sally<br></br>
-                Email: <a href="mailto:sally@sallyco.com">Contact me</a><br></br>
-                Box 564, Disneyland<br></br>
-                USA<br></br>
-                555-555-5555<br></br>
-              </address><br></br>
-              <img 
-                style={{borderStyle: "solid", borderWidth: "1px", borderRadius: "3px"}}
-                src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Sally">
-              </img>
+            <section style={{flex: "1"}}>
+              <fieldset>
+                <legend>Contact</legend>
+                <address id='address' style={{fontStyle: "normal"}}>
+                  Name: Sally S Sally<br></br>
+                  Email: <a href="mailto:sally@sallyco.com">Contact me</a><br></br>
+                  Box 564, Disneyland<br></br>
+                  USA<br></br>
+                  555-555-5555<br></br>
+                </address><br></br>
+                <img 
+                  style={{borderStyle: "solid", borderWidth: "1px", borderRadius: "3px"}}
+                  src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="Sally">
+                </img>
+              </fieldset>
             </section>
-            <section>
-              <h2>Employment History</h2>
-              <h3>Company 1</h3>
-              <div className="jd">
-                Founder <i>(June 2017 to Present)</i><br></br><br></br>
-                Lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum. 
-                Lorum ipsum lorum ipsum lorum ipsum lorum ipsum. Lorum ipsum lorum ipsum lorum ipsum. 
-                Lorum ipsum lorum ipsum lorum ipsum.
-              </div>
-              <h3>Company 2</h3>
-              <div className="jd">
-                Founder <i>(June 2015 to June 2017)</i><br></br><br></br>
-                Lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum. 
-                Lorum ipsum lorum ipsum lorum ipsum lorum ipsum. Lorum ipsum lorum ipsum lorum ipsum. 
-                Lorum ipsum lorum ipsum lorum ipsum.
-              </div>
+            <section style={{flex: "1"}}>
+              <fieldset>
+                <legend>Work</legend>
+                <h2>Employment History</h2>
+                <h3>Company 1</h3>
+                <div className="jd">
+                  Founder <i>(June 2017 to Present)</i><br></br><br></br>
+                  Lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum. 
+                  Lorum ipsum lorum ipsum lorum ipsum lorum ipsum. Lorum ipsum lorum ipsum lorum ipsum. 
+                  Lorum ipsum lorum ipsum lorum ipsum.
+                </div>
+                <h3>Company 2</h3>
+                <div className="jd">
+                  Founder <i>(June 2015 to June 2017)</i><br></br><br></br>
+                  Lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum. 
+                  Lorum ipsum lorum ipsum lorum ipsum lorum ipsum. Lorum ipsum lorum ipsum lorum ipsum. 
+                  Lorum ipsum lorum ipsum lorum ipsum.
+                </div>
+              </fieldset>
             </section>
-            <section>
-              <h2>Education</h2>
-              <h3>Springfield University</h3>
-              <div className="schooling">
-                Nuclear Physics BS <i>(1993)</i><br></br><br></br>
-              </div>
+            <section style={{flex: "1"}}>
+              <fieldset>
+                <legend>School</legend>
+                <h2>Education</h2>
+                <h3>Springfield University</h3>
+                <div className="schooling">
+                  Nuclear Physics BS <i>(1993)</i><br></br><br></br>
+                </div>
+              </fieldset>
             </section>
           </main>
         </header>
